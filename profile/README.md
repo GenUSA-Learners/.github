@@ -3,10 +3,15 @@
 
 This is where students can find class repositories, along with some other helpful resources.
 
-## How To Use Your Class Repository
+## TOC
 
+- [How to Use Your Class Repository](how-to-use-your-class-repository)
+- [Git + GitHub Refresher]()
+- [Completing Assigned Codecademy Homework](completing-assigned-codecademy-homework)
 
-- Clone this repository down to your computer
+### How To Use Your Class Repository
+
+- Clone your designated class repository down to your computer
 - Create a 'working' branch to work on
   - You can do this with the
   `git checkout -b working` command
@@ -23,7 +28,7 @@ This is where students can find class repositories, along with some other helpfu
   - This should pull all the new changes into your working branch
 
 ***NOTE:***
-You will not be running any of the following commands on the Main branch of this repository:
+You will NOT be running any of the following commands on the Main branch of this repository:
 
 - git add
 - git commit
@@ -40,3 +45,10 @@ This will cause problems when pulling any new changes or activities.
     - Run `git checkout main`
     - Then `git fetch origin`
     - followed by `git reset --hard origin/main`
+    
+### Completing Assigned Codecademy Homework 
+
+Homework for each unit is listed in your class repository in the `Homework` folders followed by the learning objectives for that module. 
+
+***Note:*** **Each module assigned in Codecademy is expected to be completed in full*. This includes *all lessons, projects, quizzes, articles, and videos* if they appear in the module assigned. The link in your class repo only links to the first item in the module. Continue to click through the content until the assigned module is 100% complete, unless explicitly stated otherwise.*
+
