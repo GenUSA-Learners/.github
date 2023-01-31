@@ -3,7 +3,7 @@
 
 This is where students can find class repositories, along with some other helpful resources.
 
-## TOC
+## Table Of Contents
 
 - [How to Use Your Class Repository](how-to-use-your-class-repository)
 - [Git + GitHub Refresher]()
