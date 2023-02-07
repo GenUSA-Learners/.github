@@ -18,11 +18,10 @@ This is where students can find class repositories, along with some other helpfu
 - [Git Cheat Sheet 1](https://education.github.com/git-cheat-sheet-education.pdf)
 - [Git Cheat Sheet 2](https://docs.google.com/document/d/16UxiLWYXl5pt6Ql6wZoNdNxFKmSqKbTC/copy)
 - [Create Personal Access Token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-- [`code .` Shortcut](./references/Code-Shortcut.md)
+- [`code .` Shortcut](../references/codeshortcut.md)
 
 ### How To Use Your Class Repository
 
-<!-- If you find yourself struggling with these directions, please refer to the [Command Line, Git + GitHub Reference](./Cli-Git-GitHub-Ref.md) -->
 #### Clone Class Repo to Your Computer
 
 - Navigate to the Repository on GitHub
