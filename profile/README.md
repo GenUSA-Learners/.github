@@ -1,7 +1,7 @@
 
 # Generation Learners GitHub Org
 
-This is where students can find class repositories, along with some other helpful resources.
+This is where students can find class repositories, along with some other helpful resources. Please review the documentation below to learn how to use and interact with your class repository and what's expected when completing assignments and activities.
 
 ## Table Of Contents
 
