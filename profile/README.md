@@ -9,9 +9,8 @@ This is where students can find class repositories, along with some other helpfu
   - [Clone Class Repo to Your Computer](#clone-class-repo-to-your-computer)
   - [Create a 'working' branch](#create-a-working-branch)
   - [Pulling New Changes](#pulling-new-changes)
-- [How to Fix Your Class Repository](#fixing-your-class-repository)
-- [Navigating the Activities Folder](#navigating-the-activities-folder)
-- [Git + GitHub Reference](./Cli-Git-GitHub-Ref.md)
+  - [How to Fix Your Class Repository](#fixing-your-class-repository)
+- [Navigating Your Class Repository](#navigating-your-class-repository)
 - [Completing Assigned Codecademy Homework](#completing-assigned-codecademy-homework)
 
 ## Other References
@@ -69,7 +68,7 @@ You will `NOT` be running any of the following commands on the Main branch of th
 
 Using these commands on the `Main` branch will cause problems when pulling any new changes or activities.
 
-### Fixing Your Class Repository
+#### Fixing Your Class Repository
 
 *If you **were** working on the Main branch by accident, you may have to stash your changes so that you can pull.* You can do this by following the steps below:
 
@@ -84,7 +83,16 @@ Using these commands on the `Main` branch will cause problems when pulling any n
   - Then `git fetch origin`
   - followed by `git reset --hard origin/main`
 
-### Navigating the Activities Folder
+### Navigating Your Class Repository
+
+The curriculum is divided into sections and sub-sections. In each sub-section (or 'module') within your class repository, you'll find some of all of the following folders:
+
+- `Activities` - may contain practice, examples, and activities folders.
+  - **practice** - This is where you'll work through the activities, mess around with examples, and experiment with code. You'll do this by copying the specific activity or example, and pasting it into this folder. *Interacting with the repository in this way reduces the chances of accidentally creating conflicts when you pull new changes each week*
+  - **examples** - may contain examples of working code snippets or demos your instructor wants you to be able to use for reference when completing the activities
+  - **activities** - most likely contains the activities you'll be working through in class, either peer coding in breakout rooms or as an individual assignment
+- `Homework` - contains links to Codecademy homework and learning objectives for the module
+- `Resources` - contains links to articles, videos, cheatsheets, and other items that you should use to learn and study if you get stuck, or supplement your learning
 
 ### Completing Assigned Codecademy Homework
 
