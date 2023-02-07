@@ -84,7 +84,7 @@ Using these commands on the `Main` branch will cause problems when pulling any n
 
 ### Navigating Your Class Repository
 
-The curriculum is divided into sections and sub-sections. In each sub-section (or 'module') within your class repository, you'll find some of all of the following folders:
+The curriculum is divided into sections and sub-sections. In each sub-section (or 'module') within your class repository, you'll find some or all of the following folders:
 
 - `Activities` - may contain practice, examples, and activities folders.
   - **practice** - This is where you'll work through the activities, mess around with examples, and experiment with code. You'll do this by copying the specific activity or example, and pasting it into this folder. *Interacting with the repository in this way reduces the chances of accidentally creating conflicts when you pull new changes each week*
