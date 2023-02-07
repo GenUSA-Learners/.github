@@ -1,54 +1,93 @@
 
-# Generation Learners - Site documentation
+# Generation Learners GitHub Org
 
 This is where students can find class repositories, along with some other helpful resources.
 
 ## Table Of Contents
 
-- [How to Use Your Class Repository](how-to-use-your-class-repository)
-- [Git + GitHub Refresher]()
-- [Completing Assigned Codecademy Homework](completing-assigned-codecademy-homework)
+- [How to Use Your Class Repository](#how-to-use-your-class-repository)
+  - [Clone Class Repo to Your Computer](#clone-class-repo-to-your-computer)
+  - [Create a 'working' branch](#create-a-working-branch)
+  - [Pulling New Changes](#pulling-new-changes)
+- [How to Fix Your Class Repository](#fixing-your-class-repository)
+- [Navigating the Activities Folder](#navigating-the-activities-folder)
+- [Git + GitHub Reference](./Cli-Git-GitHub-Ref.md)
+- [Completing Assigned Codecademy Homework](#completing-assigned-codecademy-homework)
+
+## Other References
+
+- [Git Cheat Sheet 1](https://education.github.com/git-cheat-sheet-education.pdf)
+- [Git Cheat Sheet 2](https://docs.google.com/document/d/16UxiLWYXl5pt6Ql6wZoNdNxFKmSqKbTC/copy)
+- [Create Personal Access Token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+- [`code .` Shortcut](./references/Code-Shortcut.md)
 
 ### How To Use Your Class Repository
 
-- Clone your designated class repository down to your computer
-- Create a 'working' branch to work on
-  - You can do this with the
-  `git checkout -b working` command
-  **OR**
-  `git branch working`
-  followed by `git checkout working`
-  - ***You will be completing activities and making any other changes to the repository on your new `working` branch***
-- When you need to pull new changes and activities, follow the steps below:
-  - Since you'll be in your `working` branch, you'll need to checkout the main branch
-    - Run `git checkout main`
-    - Run `git pull`
-    - Run `git checkout working`
-    - Run `git merge main`
-  - This should pull all the new changes into your working branch
+<!-- If you find yourself struggling with these directions, please refer to the [Command Line, Git + GitHub Reference](./Cli-Git-GitHub-Ref.md) -->
+#### Clone Class Repo to Your Computer
+
+- Navigate to the Repository on GitHub
+- Use the green "Code" button in your repository, select HTTPS, then copy the url
+- Go to your command line (terminal/gitbash), navigate to the directory/folder on your computer that you use to keep your projects (ex. `dev-projects` directory) and make sure you `cd` into that project folder
+- Use the following command: `git clone repo_url`
+  - This will create a new repository in your projects folder
+  - Open your projects folder in VSCode by either selecting 'file > open' OR by using the `code .` shortcut
+  - Then `cd` into the `root directory` of the repo you just cloned
+
+#### Create a 'working' branch
+
+Create a 'working' branch to work on in order to keep your code separate from the code on the Main branch.
+
+This can be done by following the directions below:
+
+- In the root directory of the repository, run the `git checkout -b working` command
+**OR**
+`git branch working` followed by
+`git checkout working`.
+- move to your new branch using the
+`git checkout working` command.
+  - notice that this new branch has the same code as your main branch. Use the command `git branch` to see all branches.
+
+***You will be completing activities and making any other changes to the repository on your new `working` branch***
+
+#### Pulling New Changes
+
+When you need to pull new changes and activities, follow the steps below:
+
+From your `working` branch, run:
+
+- `git pull origin main`
+
+This should pull all the new changes into your working branch
 
 ***NOTE:***
-You will NOT be running any of the following commands on the Main branch of this repository:
+You will `NOT` be running any of the following commands on the Main branch of this repository:
 
-- git add
-- git commit
-- git push
+- `git add`
+- `git commit`
+- `git push`
 
-This will cause problems when pulling any new changes or activities.
+Using these commands on the `Main` branch will cause problems when pulling any new changes or activities.
 
-- *If you were working on the main branch by accident, you may have to stash your changes so that you can pull.* You can do this by following the steps below:
-  - From the `main branch`, run `git stash`
-  - Then run `git pull`
-  - To get your changes back, run `git stash pop`
-  - To get all the changes back into your working branch, run `git checkout working` followed by `git merge main`
-  - To restore your local main branch to it's unchanged state so that it matches the main branch on github (`origin main` -- this is the remote main branch) and you don't have this problem the next time you try to pull new activities...
-    - Run `git checkout main`
-    - Then `git fetch origin`
-    - followed by `git reset --hard origin/main`
-    
-### Completing Assigned Codecademy Homework 
+### Fixing Your Class Repository
 
-Homework for each unit is listed in your class repository in the `Homework` folders followed by the learning objectives for that module. 
+*If you **were** working on the Main branch by accident, you may have to stash your changes so that you can pull.* You can do this by following the steps below:
+
+- On the `Main branch` run `git stash` to stash the changes that are causing conflicts
+- Then run `git pull` to pull the new changes from your instructor
+- To get all the changes back into your working branch, run the following commands in order:
+  - `git checkout working`
+  - `git merge main`to merge the new changes from the instructor that you just pulled from GitHub
+  - `git stash pop` to get your changes back
+- To restore your local main branch to it's unchanged state so that it matches the main branch on github (`origin main` -- the remote main branch) and so that you don't have this problem in the future
+  - Run `git checkout main`
+  - Then `git fetch origin`
+  - followed by `git reset --hard origin/main`
+
+### Navigating the Activities Folder
+
+### Completing Assigned Codecademy Homework
+
+Homework for each unit is listed in your class repository in the `Homework` folders followed by the learning objectives for that module.
 
 ***Note:*** **Each module assigned in Codecademy is expected to be completed in full*. This includes *all lessons, projects, quizzes, articles, and videos* if they appear in the module assigned. The link in your class repo only links to the first item in the module. Continue to click through the content until the assigned module is 100% complete, unless explicitly stated otherwise.*
-
